@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Lizard Spock</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <h3>Console game!</h3>
+    <script>
+      // random computer move
+      function computerPlay() {
+        let items = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+        var computerMove = items[Math.floor(Math.random() * items.length)];
+        console.log(computerMove);
+        return computerMove;
+      }
+
+      // player move prompt
+      function playerPlay() {
+        let playerMove = prompt(
+          'Choose rock, paper, scissors, lizard or Spock'
+        ).toLowerCase();
+        console.log(playerMove);
+        return playerMove;
+      }
+
+      // who won the round
+      function playRound(playerSelection, computerSelection) {
+        if (playerSelection === computerSelection) {
+          roundResult = 'meh, it is a tie...';
+        } else if (playerSelection === 'paper') {
+          if (computerSelection === 'scissors') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'rock') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'spock') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'lizard') {
+            roundResult = 'comp wins!';
+          }
+        } else if (playerSelection === 'lizard') {
+          if (computerSelection === 'rock') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'spock') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'paper') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'scissors') {
+            roundResult = 'comp wins!';
+          }
+        } else if (playerSelection === 'scissors') {
+          if (computerSelection === 'spock') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'lizard') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'paper') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'rock') {
+            roundResult = 'comp wins!';
+          }
+        } else if (playerSelection === 'rock') {
+          if (computerSelection === 'spock') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'scissors') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'paper') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'lizard') {
+            roundResult = 'you win!';
+          }
+        } else if (playerSelection === 'spock') {
+          if (computerSelection === 'lizard') {
+            roundResult = 'comp wins!';
+          } else if (computerSelection === 'scissors') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'rock') {
+            roundResult = 'you win!';
+          } else if (computerSelection === 'paper') {
+            roundResult = 'comp wins!';
+          }
+        }
+        return roundResult;
+      }
+
+      let compWins = 0;
+      let playerWins = 0;
+
+      function game() {
+        for (var i = 1; i <= 5; i++) {
+          const playerSelection = playerPlay();
+          const computerSelection = computerPlay();
+          console.log(playRound(playerSelection, computerSelection));
+
+          if (roundResult === 'comp wins!') {
+            compWins++;
+          } else if (roundResult === 'you win!') {
+            playerWins++;
+          }
+
+          console.log(playerWins, compWins);
+        }
+      }
+
+      game();
+
+      if (compWins > playerWins) {
+        console.log(
+          'Final Score is: ' +
+            playerWins +
+            ' : ' +
+            compWins +
+            '. Computer is the winner...'
+        );
+      } else if (compWins < playerWins) {
+        console.log(
+          'Final Score is: ' +
+            playerWins +
+            ' : ' +
+            compWins +
+            '. You are the winner!'
+        );
+
+        // if made possible
+      } else if (compWins === playerWins) {
+        console.log(
+          'Final Score is: ' + playerWins + ' : ' + compWins + '. Boring tie...'
+        );
+      }
+    </script>
+  </body>
+</html>
