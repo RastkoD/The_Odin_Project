@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: #000;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+li a:hover {
+  text-decoration: underline;
+  color: rgb(54, 54, 54);
+}
+
+.navImg {
+  height: 23px;
+  position: relative;
+  bottom: 4px;
+}
+
+.signInBtn {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px;
+}
+
+.signInBtn:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bar {
+  margin: 0 auto;
+  width: 475px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+}
+.bar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
+.searchbar {
+  height: 45px;
+  border: none;
+  width: 400px;
+  font-size: 16px;
+  outline: none;
+}
+.searchImg {
+  height: 15px;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  margin-right: 20px;
+}
+
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.twoBtns {
+  height: 70px;
+  padding-top: 18px;
+  top: 53px;
+  width: 487px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gSearchLuck {
+  border-radius: 4px;
+  color: #5f6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #5f636800;
+}
+
+.gSearchLuck:hover {
+  color: rgb(37, 37, 37);
+  border: 1px solid #babdc2;
+}
+
+.offeredBox {
+  text-align: center;
+  font-size: small;
+  color: #5f6368;
+}
+
+.gOffered a {
+  text-decoration: none;
+}
+
+.gOffered a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.upFooter {
+  border: 1px solid #d4d7db;
+  padding: 10px;
+  color: #767b81;
+}
+
+.upFooter a {
+  margin-left: 10px;
+}
+
+.botFooter {
+  padding: 10px;
+}
+
+.botFooter a {
+  color: #787d83;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.botFooter a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #787d83;
+}
+
+.botnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footerRight {
+  float: right;
+}
