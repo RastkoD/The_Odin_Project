@@ -1,0 +1,14 @@
+button {
+  background: linear-gradient(145deg, #f1f8fe, #cbd1d5);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 9px 9px 15px #b8bfc4, -9px -9px 15px #ffffff;
+  color: teal;
+  font-weight: bolder;
+  height: 60px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 60px;
+  cursor: pointer;
+}
