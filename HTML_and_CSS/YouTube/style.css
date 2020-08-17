@@ -15,6 +15,14 @@ body {
   border-radius: 50%;
 }
 
+.uploader-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 18px;
+  margin-top: 5px;
+}
+
 .headerNav {
   display: flex;
   justify-content: space-between;
@@ -102,8 +110,105 @@ main {
 .videoSection {
   grid-column-start: 1;
   grid-row-start: 1;
-  height: 500px;
+  height: 700px;
   background: red;
+  padding: 10px;
+}
+
+.mainVideo h3 {
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+}
+
+.viewsLikeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.likeShare {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 15px 0 0;
+  align-items: center;
+}
+
+.likeShare p {
+  margin-left: 6px;
+  font-size: smaller;
+  text-transform: uppercase;
+}
+
+.likeShare img {
+  margin-left: 20px;
+}
+
+.noHover:hover {
+  cursor: text;
+}
+
+.likeShare img:hover,
+p:hover {
+  cursor: pointer;
+}
+
+.mainVideoInfo {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.uploaderInfo {
+  margin-top: 5px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.uploaderInfo a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-weight: lighter;
+}
+
+.uploaderImgInfo h4 {
+  margin-top: 10px;
+}
+
+.uploaderInfo p {
+  margin-bottom: 3px;
+  color: rgb(119, 119, 119);
+  font-size: smaller;
+}
+
+.uploaderImgSub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.uploaderImgSub div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribed {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.subscribed img {
+  margin-top: 9px;
+  margin-left: 20px;
+}
+
+.subscribed a {
+  padding: 10px 14px 10px 14px;
+  background: #ececec;
+  color: rgb(104, 104, 104);
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bolder;
 }
 
 .sideVideoContainer {
