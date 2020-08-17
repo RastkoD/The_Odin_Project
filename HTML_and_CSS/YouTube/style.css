@@ -111,7 +111,7 @@ main {
   grid-column-start: 1;
   grid-row-start: 1;
   height: 700px;
-  background: red;
+
   padding: 10px;
 }
 
@@ -124,6 +124,11 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: rgb(75, 75, 75);
+}
+
+.smallerText {
+  font-size: 14px;
 }
 
 .likeShare {
@@ -154,7 +159,7 @@ p:hover {
 }
 
 .mainVideoInfo {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgb(204, 204, 204);
 }
 
@@ -165,7 +170,7 @@ p:hover {
 
 .uploaderInfo a {
   text-decoration: none;
-  color: rgb(46, 46, 46);
+  color: rgb(26, 26, 26);
   font-weight: lighter;
 }
 
@@ -175,7 +180,7 @@ p:hover {
 
 .uploaderInfo p {
   margin-bottom: 3px;
-  color: rgb(119, 119, 119);
+  color: rgb(94, 94, 94);
   font-size: smaller;
 }
 
@@ -202,6 +207,10 @@ p:hover {
   margin-left: 20px;
 }
 
+.subscribed img:hover {
+  cursor: pointer;
+}
+
 .subscribed a {
   padding: 10px 14px 10px 14px;
   background: #ececec;
@@ -209,6 +218,26 @@ p:hover {
   text-transform: uppercase;
   font-size: smaller;
   font-weight: bolder;
+}
+
+.uploaderVideoInfo {
+  width: 84%;
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.uploaderVideoInfo p {
+  color: rgb(26, 26, 26);
+}
+
+.showMore {
+  text-transform: uppercase;
+}
+
+.showMore p {
+  margin: 7px 0 15px 0;
+  color: rgb(75, 75, 75);
+  font-size: 13px;
 }
 
 .sideVideoContainer {
