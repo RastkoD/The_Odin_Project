@@ -1,0 +1,260 @@
+body {
+  background-color: #eceef1;
+  font-family: 'AvenirNext', Avenir, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  width: 95%;
+  margin: 0 auto;
+  color: #4c4c4c;
+  align-self: center;
+  align-items: center;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-text {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.header-text a {
+  margin-top: 0;
+  color: #0077c5;
+}
+
+.sign-In-Button {
+  border: 1px #4c4c4c solid;
+  background-color: #0077c5;
+  padding: 8px 20px;
+  display: flex;
+  border-radius: 4px;
+  height: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-In-Button p {
+  font-size: 0.8rem;
+  color: white;
+  padding-left: 5px;
+}
+
+.fa-lock {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container-header {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intuit-header-logo {
+  width: 135px;
+  height: 70px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  color: #9a9ca5;
+}
+
+.logo-section p {
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.color-icon {
+  width: 45px;
+  height: 23px;
+}
+
+form {
+  height: 80%;
+  border: #a7a7a7 1px solid;
+  border-bottom: none;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 572px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  height: 20%;
+}
+
+.form-header h1 {
+  font-size: 1.4rem;
+}
+
+.form-header p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.form-header a {
+  font-size: 0.8rem;
+  color: #0077c5;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.section label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.section input {
+  height: 25px;
+  border: 1px solid #c1c5c8;
+  border-radius: 2px;
+}
+
+.section span {
+  margin-top: 5px;
+  font-size: 0.6rem;
+}
+
+.create-account-button {
+  margin-top: 10px;
+  border: 1px #0077c5 solid;
+  background-color: #0077c5;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account-button p {
+  color: #fff;
+  padding-left: 8px;
+  font-size: 0.9rem;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: #757575;
+  text-align: center;
+  line-height: 20px;
+}
+
+.disclaimer a {
+  color: #0077c5;
+  text-decoration: none;
+}
+
+.container-footer {
+  margin-top: 10px;
+  background-color: #eceef1;
+  font-size: 0.7rem;
+  width: calc(100% - 1px);
+  margin-right: 5px;
+  text-align: center;
+  border: #a7a7a7 1px solid;
+  border-top: none;
+  position: relative;
+  bottom: 10px;
+}
+
+.container-footer a {
+  color: #0077c5;
+  text-decoration: none;
+}
+
+.main-footer {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: relative;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.main-footer ul {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li {
+  padding-right: 15px;
+  text-align: center;
+}
+
+.main-footer p {
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 6%;
+  background: #6b6c72;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.footer-anchor {
+  width: 180px;
+  height: 40px;
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
+  line-height: 2.5;
+  text-decoration: none;
+}
+
+.addHover:hover {
+  cursor: pointer;
+}
